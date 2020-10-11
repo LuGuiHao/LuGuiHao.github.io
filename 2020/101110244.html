@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="第一篇博客, Welcome to Hao&#39;s blog">
+    <meta name="keywords" content="初学CSS（一）, Welcome to Hao&#39;s blog">
     <meta name="description" content="在知识的海洋里花样游泳">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>第一篇博客 | Welcome to Hao&#39;s blog</title>
+    <title>初学CSS（一） | Welcome to Hao&#39;s blog</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -310,12 +310,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/13.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/23.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">第一篇博客</h1>
+                    <h1 class="description center-align post-title">初学CSS（一）</h1>
                 </div>
             </div>
         </div>
@@ -432,8 +432,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/tags/web/">
-                                <span class="chip bg-color">web</span>
+                            <a href="/tags/CSS/">
+                                <span class="chip bg-color">CSS</span>
                             </a>
                         
                     </div>
@@ -448,7 +448,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2020-10-10
+                    2020-10-11
                 </div>
                 
 
@@ -464,16 +464,54 @@
         <hr class="clearfix">
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="博客搭建"><a href="#博客搭建" class="headerlink" title="博客搭建"></a>博客搭建</h1><h2 id="安装的需要的编辑软件"><a href="#安装的需要的编辑软件" class="headerlink" title="安装的需要的编辑软件"></a>安装的需要的编辑软件</h2><ul>
-<li>Typora<br>个人建议在国内的网站下载，不要在官网，下得慢  </li>
-<li>VS Code<br>轻量级文档编辑器  </li>
+                <h1 id="初识CSS"><a href="#初识CSS" class="headerlink" title="初识CSS"></a>初识CSS</h1><h2 id="什么是CSS？"><a href="#什么是CSS？" class="headerlink" title="什么是CSS？"></a>什么是CSS？</h2><ul>
+<li>CSS的英文全称为Cascading Style Sheet，中文叫做层叠级联样式表，可以用来美化网页。  </li>
 </ul>
-<h2 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h2><p><img src="https://ss0.bdstatic.com/94oJfD_bAAcT8t7mm9GUKT-xh_/timg?image&quality=100&size=b4000_4000&sec=1602381484&di=d5a1ef10a071ec21828bd5369fcf936d&src=http://bbsfiles.vivo.com.cn/vivobbs/attachment/forum/201610/10/223520gj6otfv9t51t9oi9.jpg">  </p>
-<h2 id="超链接"><a href="#超链接" class="headerlink" title="超链接"></a>超链接</h2><p><a target="_blank" rel="noopener" href="https://www.baidu.com/">百度</a>  </p>
-<ol>
-<li></li>
-<li></li>
-</ol>
+<h2 id="发展史"><a href="#发展史" class="headerlink" title="发展史"></a>发展史</h2><ul>
+<li>CSS 1.0  </li>
+<li>CSS 2.0<br>使得HTML与CSS结构分离，使网页变得简单。<br><img src="/2020/101110244/01.png"></li>
+<li>CSS 2.1<br>增加了浮动、定位等新特性。</li>
+<li>CSS 3.0<br>新增了圆角、阴影、动画（部分浏览器存在兼容性问题）等特性。  </li>
+</ul>
+<h2 id="语法："><a href="#语法：" class="headerlink" title="语法："></a>语法：</h2><ul>
+<li><p>选择器{<br>  声明1;<br>}</p>
+</li>
+<li><p>示例代码  </p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;title&gt;Title&lt;/title&gt;
+  &lt;!--规范  style可以编写css代码 ，每一个声明最好使用分号;结尾
+  语法：
+      选择器&#123;
+         声明1;
+         声明2;
+         声明3;
+      &#125;
+  --&gt;
+  &lt;style&gt;
+      h1&#123;
+       color: red;
+      &#125;
+  &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+</code></pre>
+</li>
+</ul>
+<h1>我是标题</h1>
+
+
+
+```    
+- 效果图
+![](初学CSS（一）/02.png)
+
+<ul>
+<li>个人理解为用来h1标签作为选择器，在选择器中声明了颜色为红色，使h1标签中“我是标题”的内容字样显示为红色。  </li>
+</ul>
+<h2 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h2><p><a target="_blank" rel="noopener" href="https://www.runoob.com/css3/css3-tutorial.html">CSS3教程|菜鸟教程</a></p>
 
             </div>
             <hr/>
@@ -499,7 +537,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://luiguihao.github.io/2020/101059448.html">http://luiguihao.github.io/2020/101059448.html</a>
+                    <a href="http://luiguihao.github.io/2020/101110244.html">http://luiguihao.github.io/2020/101110244.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -537,8 +575,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/tags/web/">
-                                    <span class="chip bg-color">web</span>
+                                <a href="/tags/CSS/">
+                                    <span class="chip bg-color">CSS</span>
                                 </a>
                             
                         </div>
@@ -709,7 +747,7 @@
         repo: 'LuGuiHao.github.io',
         owner: 'LuGuiHao',
         admin: "LuGuiHao",
-        id: '2020-10-10T16-25-17',
+        id: '2020-10-11T20-41-28',
         distractionFreeMode: false  // Facebook-like distraction free mode
     });
 
@@ -733,9 +771,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2020/101110244.html">
                     <div class="card-image">
@@ -753,9 +792,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2020-10-11
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-11
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -764,6 +803,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -782,13 +822,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/2020/100916107.html">
+                <a href="/2020/101059448.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/12.jpg" class="responsive-img" alt="Hello World">
+                        <img src="/medias/featureimages/13.jpg" class="responsive-img" alt="第一篇博客">
                         
-                        <span class="card-title">Hello World</span>
+                        <span class="card-title">第一篇博客</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -799,7 +839,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2020-10-10
                             </span>
                         <span class="publish-author">
                             
@@ -808,6 +848,14 @@
                             
                         </span>
                     </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/web/">
+                        <span class="chip bg-color">web</span>
+                    </a>
+                    
                 </div>
                 
             </div>
